@@ -101,7 +101,7 @@ class RxCollectionViewReactiveArrayDataSource<Element>
     func collectionView(_ collectionView: UICollectionView, observedElements: [Element]) {
         self.itemModels = observedElements
         
-        collectionView.reloadData()
+        collectionView.reloadSections(NSIndexSet(index: 0))
     }
 }
 
